@@ -1,42 +1,35 @@
 <template>
-  <div>
-    hello
-    <button @click="scanCode">xxx</button>
-    {{ scanResult }}
-  </div>
+
+  <view>
+    <fridge v-if="false"></fridge>
+    <board></board>
+  </view>
+
 </template>
 
 <script>
+import fridge from '@/components/fridge.vue'
+import board from '@/components/board.vue'
 
 export default {
   data () {
     return {
-      scanResult: 'helo'
+
     }
+  },
+  mounted: function () {
   },
 
   components: {
+    fridge,
+    board
   },
 
   methods: {
-    scanCode () {
-      var that = this
 
-      wx.scanCode({
-        success (res) {
-          that.scanResult = res.result
-          console.log(res.result)
-          console.log('.........')
-        }
-      })
-
-
-    }
   }
-
 }
 </script>
 
 <style scoped>
-
 </style>

@@ -8,5 +8,9 @@ Vue.config.errorHandler = function (err) {
   }
 }
 
+wx.cloud.init({
+  env: 'fresh-keeper-cloud-eyrij'
+})
+
 const app = new Vue(App)
 app.$mount()
