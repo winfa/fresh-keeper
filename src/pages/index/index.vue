@@ -1,33 +1,24 @@
 <template>
-
   <view>
     <fridge v-if="false"></fridge>
     <board></board>
   </view>
-
 </template>
 
 <script>
-import fridge from '@/components/fridge.vue'
 import board from '@/components/board.vue'
 
 export default {
-  data () {
-    return {
-
-    }
+  data() {
+    return {}
   },
-  mounted: function () {
-  },
+  mounted: function() {},
 
   components: {
-    fridge,
-    board
+    board,
   },
 
-  methods: {
-
-  }
+  methods: {},
 }
 </script>
 
